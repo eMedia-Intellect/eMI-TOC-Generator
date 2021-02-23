@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*
+Copyright © 2016–2017, 2019, 2021 eMedia Intellect.
+
+This file is part of eMI TOC Generator.
+
+eMI TOC Generator is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+eMI TOC Generator is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with eMI TOC Generator. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#TableOfContents
+{
+	background-color: #F9F9F9;
+	border: 1px solid #AAAAAA;
+	display: none;
+	font-size: 90%;
+	line-height: 160%;
+	padding: 5px;
+}
+
+#TableOfContents a
+{
+	text-decoration: none;
+}
+
+#TableOfContents a:hover
+{
+	text-decoration: underline;
+}
+
+@media print
+{
+	#TableOfContents a:link, #TableOfContents a:visited
+	{
+		color: #000000;
+	}
+}
+
+#TableOfContentsDisplayToggle
+{
+	font-size: smaller;
+	font-weight: normal;
+}
+
+@media print
+{
+	#TableOfContentsDisplayToggle
+	{
+		display: none;
+	}
+}
+
+#TableOfContentsDisplayToggleText
+{
+	color: blue;
+	cursor: pointer;
+}
+
+#TableOfContentsHeader
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+#TableOfContentsList > ol
+{
+	padding: 0;
+}
+
+#TableOfContentsList ol
+{
+	list-style-type: none;
+	margin: 0;
+}
